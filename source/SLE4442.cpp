@@ -11,7 +11,6 @@ namespace smartCards {
 
 /**
  * @brief  SLE4442 class (max clock : 50KHz, minimum pulse width: 9us)
- * @param  delayFunction : function which make 10us delay
  * @retval None
  */
 SLE4442::SLE4442() :
