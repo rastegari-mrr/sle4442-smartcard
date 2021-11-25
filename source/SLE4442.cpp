@@ -44,7 +44,7 @@ bool SLE4442::initialize(uint8_t *data) const {
 		tmp = read();
 		*d |= static_cast<uint32_t>(tmp) << (index * 8 + 1);
 	}
-	return d[0] != 0xFF;
+	return data[0] != 0xFF;
 }
 
 uint8_t SLE4442::read() const {
