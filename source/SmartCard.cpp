@@ -118,6 +118,7 @@ SmartCard_Results smartCard::changePassword(uint8_t password1,
 	SLE4442::writeSecuredMemory(1, password1);
 	SLE4442::writeSecuredMemory(2, password2);
 	SLE4442::writeSecuredMemory(3, password3);
+	//The card must be reauthenticate after changing passwords
 	m_isAuthenticated = false;
 	return SmartCard_Results::OK;
 }
